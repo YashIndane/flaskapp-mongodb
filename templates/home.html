@@ -1,0 +1,43 @@
+<html>
+  <head>
+   <title>Welcome</title>
+   <link rel="shortcut icon" type="image/png" href="{{ url_for('static' , filename='home_favicon.png') }}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+
+   <style>
+     
+     body{
+
+           background-image:url({{ url_for('static' , filename='mainmongo.jpg') }})
+         }
+   
+   </style>
+  </head>
+  <body>
+
+
+    <img src="{{ url_for('static' , filename='add_button.png') }}" id="ad">
+    <img src="{{ url_for('static' , filename='update_button.png') }}" id="up">
+    <img src="{{ url_for('static' , filename='delete_button.png') }}" id="de">
+    <img src="{{ url_for('static' , filename='fetch_button.png') }}" id="fe">
+
+
+    <form method="GET" action="/add">
+      <input type="submit" value="ADD" id="adb">
+    </form>
+
+    <form method="GET" action="/update">
+      <input type="submit" value="UPDATE" id="upb">
+    </form>
+  
+    <form method="GET" action="/delete">
+      <input type="submit" value="DELETE" id="deb">
+    </form>
+
+    <form method="GET" action="/fetch">
+      <input type="submit" value="FETCH" id="feb">
+    </form>
+   
+   
+  </body>
+</html>

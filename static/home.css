@@ -1,0 +1,82 @@
+#ad{
+
+
+  position:absolute;
+  outline:none;
+  left:265;
+  top:350;
+ 
+}
+
+#up{
+
+ position:absolute;
+ outline:none;
+ left:590;
+ top:350;
+
+}
+
+#de{
+
+ position:absolute;
+ outline:none;
+ left:913;
+ top:350;
+
+
+}
+
+#fe{
+
+ position:absolute;
+ outline:none;
+ width:966px;
+ left:265;
+ top:585;
+
+
+
+}
+
+#adb{
+
+  position:absolute;
+  outline:none;
+  height:208px;
+  width:318px;
+  left: 265;
+  top:350;
+  background-color:transparent;
+  border-color:transparent;
+  
+
+}
+
+#upb{
+
+  position:absolute;
+  outline:none;
+  height:208px;
+  width:318px;
+  left: 590;
+  top:350;
+  background-color:transparent;
+  border-color:transparent;
+
+
+}
+
+#deb{
+
+  position:absolute;
+  outline:none;
+  height:208px;
+  width:318px;
+  left: 913;
+  top:350;
+  background-color:transparent;
+  border-color:transparent;
+
+}
+
