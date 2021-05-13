@@ -39,6 +39,20 @@
 
 }
 
+#feb{
+
+ position:absolute;
+ outline:none;
+ width:966px;
+ height:78px;
+ left:265;
+ top:585;
+ background-color:transparent;
+ border-color:transparent;
+
+
+}
+
 #adb{
 
   position:absolute;

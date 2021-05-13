@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Fetch Data</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static' , filename='bb.png') }}">
+  </head>
+
+  <body>
+    <form action="/fad">
+      <input type="submit" value="Fetch all data"/>
+    </form></br>
+
+    <form action="/fsd">
+      Enter ID:<input type="text" name="sd"/>
+     <input type="submit" value="Fetch a record"/>
+  </body>
+</html>
