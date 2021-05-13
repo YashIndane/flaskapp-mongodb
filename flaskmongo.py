@@ -7,11 +7,11 @@ app = Flask("my-app")
 client = MongoClient("mongodb://127.0.0.1:27017")
 
 #getting the table (collection)
+#format is client.<data-base-name>.<collection-name>
 collection=client.userdb.u_collection
 
 get_data = lambda x : request.args.get(x)
   
-
 @app.route("/home")
 def welcome():
   #this is the homepage
