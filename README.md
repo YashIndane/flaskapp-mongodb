@@ -2,6 +2,8 @@
 
 flask and mongoDB integration
 
+![](static/webmage.png)
+
 ## Installation 
 
 ### mongoDB on Amazon Linux 2:
