@@ -41,4 +41,11 @@ pip install Flask
 
 ## Usage
 
+From the terminal create the Database and collection by:
+
+```
+use <data-base name>
+db.createCollection("<collection-name>")
+```
+
 Use the `ADD`, `UPDATE`, `DELETE` and `FETCH`to do the required operations.
