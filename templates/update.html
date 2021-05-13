@@ -1,1 +1,21 @@
-update
+<html>
+ <head>
+    <title>Update Data</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static' , filename='upfav.png') }}">
+  </head>
+
+  <body>
+    <form method="GET" action="/updateop">
+      Enter ID: <input type="text" name="idd"/></br>
+      <label for="sel">Choose what to update</label>
+      <select name="sel" id="sel">
+        <option>name</option>
+        <option>age</option>
+        <option>region</option>
+        <option>weight</option>
+      </select></br>
+      New Value:<input type="text" name="nv"/></br>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>

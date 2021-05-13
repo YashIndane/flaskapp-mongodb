@@ -31,7 +31,8 @@ def delete():
 def add_to_db():
   #this function adds the data to database
 
-  doc={
+  doc={ 
+        "_id": request.args.get("id"),
         "name": request.args.get("na"),
         "age": int(request.args.get("ag")),
         "region": request.args.get("reg"),
@@ -40,6 +41,24 @@ def add_to_db():
 
   collection.insert_one(doc)
   return "Data Added!"
+
+@app.route("/updateop" , methods=["GET"])
+def update_data():
+  #this function updates record already present
+
+  collection.update_one(
+             {"_id":request.args.get("idd")},
+             {"$set":{request.args.get("sel"):request.args.get("nv")}}
+  )
+
+  return "Updated!"
+
+@app.route("/delop" , methods=["GET"])
+def delete_data():
+  #this function deletes the document
+
+  collection.delete_one({ "_id":request.args.get("id1") })
+  return "Deleted!"
 
   
 app.run(host = "0.0.0.0", port = 3882)
