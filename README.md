@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Python-3-green)
+![](https://img.shields.io/badge/Python-3-green?style=for-the-badge)
 
 # flaskapp-mongodb
 
