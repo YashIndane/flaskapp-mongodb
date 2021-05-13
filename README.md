@@ -2,7 +2,7 @@
 
 # flaskapp-mongodb
 
-flask and mongoDB integration
+A simple webapp to demonstrate flask and mongoDB integration
 
 ![](static/webmage.png)
 
@@ -28,3 +28,7 @@ sudo yum install -y mongodb-org
 ```
 
 Complete installation guid -> [link](https://docs.mongodb.com/manual/administration/install-community/)
+
+## Usage
+
+Use the `ADD`, `UPDATE`, `DELETE` and `FETCH`to do the required operations.
