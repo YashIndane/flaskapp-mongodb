@@ -1,5 +1,15 @@
 <html>
+  <head>
+    <title>Add Data</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static' , filename='aa.png') }}">
+  </head>
   <body>
-    add
+    <form method = "GET" action="/addop">
+      Name:  <input type="text" name="na"/>
+      Age:    <input type="text" name="ag"/>
+      Region: <input type="text" name="reg"/>
+      Weight: <input type="text" name="we"/>
+      <input type="submit"/>
+    </form>
   </body>
 </html>
