@@ -5,6 +5,8 @@ app = Flask("my-app")
 
 #connecting with database
 client = MongoClient("mongodb://127.0.0.1:27017")
+
+#getting the table (collection)
 collection=client.userdb.u_collection
 
 get_data = lambda x : request.args.get(x)
@@ -35,7 +37,7 @@ def fetch_data():
   #this method is used to fetch data
   return render_template("fetch.html")
 
-@app.route("/addop" , methods=["GET"])
+@app.route("/addop" , methods = ["GET"])
 def add_to_db():
   #this function adds the data to database
 
@@ -50,7 +52,7 @@ def add_to_db():
   collection.insert_one(doc)
   return "Data Added!"
 
-@app.route("/updateop" , methods=["GET"])
+@app.route("/updateop" , methods = ["GET"])
 def update_data():
   #this function updates record already present
 
@@ -61,7 +63,7 @@ def update_data():
 
   return "Updated!"
 
-@app.route("/delop" , methods=["GET"])
+@app.route("/delop" , methods = ["GET"])
 def delete_data():
   #this function deletes the document
 
@@ -78,7 +80,7 @@ def get_all_data():
 
   return out
 
-@app.route("/fsd" , methods=["GET"])
+@app.route("/fsd" , methods = ["GET"])
 def get_doc():
   #this will print a document data based on ID
    
@@ -86,5 +88,4 @@ def get_doc():
   doc = str(collection.find_one(query))
   return doc
 
-  
 app.run(host = "0.0.0.0", port = 3882)
