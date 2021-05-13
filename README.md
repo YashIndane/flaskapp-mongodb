@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Python-3-green)
+
 # flaskapp-mongodb
 
 flask and mongoDB integration
