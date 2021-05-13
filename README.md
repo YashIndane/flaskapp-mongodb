@@ -29,6 +29,16 @@ sudo yum install -y mongodb-org
 
 Complete installation guid -> [link](https://docs.mongodb.com/manual/administration/install-community/)
 
+install `pymongo`and `flask` by 
+
+```
+pip install pymongo
+```
+
+```
+pip install Flask
+```
+
 ## Usage
 
 Use the `ADD`, `UPDATE`, `DELETE` and `FETCH`to do the required operations.
