@@ -24,7 +24,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
 now  do:
 
 ```
-sudo yum install -y mongodb-org
+$ sudo yum install -y mongodb-org
 ```
 
 Complete installation guid -> [link](https://docs.mongodb.com/manual/administration/install-community/)
@@ -32,11 +32,11 @@ Complete installation guid -> [link](https://docs.mongodb.com/manual/administrat
 install `pymongo`and `flask` by 
 
 ```
-pip install pymongo
+$ pip install pymongo
 ```
 
 ```
-pip install Flask
+$ pip install Flask
 ```
 
 ## Usage
