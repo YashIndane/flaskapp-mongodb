@@ -4,7 +4,7 @@
 
 A simple webapp to demonstrate flask and mongoDB integration
 
-![](static/webmage.png)
+![webmage](https://user-images.githubusercontent.com/53041219/207022961-671ed2e8-4447-4ec4-ba28-372a0e0a2377.png)
 
 ## Installation 
 
